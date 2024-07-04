@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<title>{% block title %}{% endblock %}</title>
+	<link href="/assets/css/output.css?v=202405221624" rel="stylesheet">
+	<script type="text/javascript">
+		const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+		document.cookie = "timezone=" + encodeURIComponent(timezone) + ";path=/";
+	</script>
+	{% block head %}{% endblock %}
+</head>
+
+<body class="bg-gray-900">
+	{% block content %}{% endblock %}
+</body>
+
+{% block scripts %}{% endblock %}
+
+</html>
