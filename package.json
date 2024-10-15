@@ -4,7 +4,7 @@
     "prd": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --minify"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.7",
-    "tailwindcss": "^3.4.1"
+    "@tailwindcss/forms": "^0.5.9",
+    "tailwindcss": "^3.4.13"
   }
 }
